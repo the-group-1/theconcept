@@ -10,9 +10,21 @@
 
   </head>
   <body>
-    <script src="sketch.js"></script>
-    <h1 style="margin-top:150px;">The most amazing people you meet on the web</h1>
-    <a href="#">Phone Orientation</a>
+    <script>
+      function setup() {
+        createCanvas(400, 400, WEBGL);
+      }
+
+      function draw() {
+        background(58, 110, 252);
+        //rotateZ(radians(rotationZ));
+        rotateX(radians(rotationX));
+        //rotateY(radians(rotationY));
+        box(200, 200, 200);
+      }
+
+
+    </script>
 
   </body>
 </html>
