@@ -9,7 +9,10 @@
 
   </head>
   <body>
+    <h1 id="rotation"></h1>
     <script>
+    var degX;
+
 
       function setup() {
         createCanvas(windowHeight, windowHeight, WEBGL);
@@ -18,18 +21,19 @@
 
 
       function draw() {
-        background(200, 0, 100);
+        background(200, 100, 100);
         //rotateZ(radians(rotationZ));
-        rotateX(radians(rotationX));
+          degX = radians(rotationX)
+        rotateX(degX);
         rotateY(radians(rotationY));
 
 
-        if(radians(rotationX) <= 0){
+        if(degX <= 0){
           box(50 , 100, 50);
         }else {
           box(100, 200, 200);
         }
-
+document.getElementById("rotation").innerHTML = degX;
       }
 
 
