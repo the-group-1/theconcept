@@ -19,13 +19,13 @@
 
 
       function draw() {
-        background(58, 33, 252);
+        background(58, 0, 100);
         //rotateZ(radians(rotationZ));
         rotateX(radians(rotationX));
         rotateY(radians(rotationY));
 
-        print(radians(rotationY));
-        if(radians(rotationY) <=90){
+
+        if(radians(rotationX) <=90){
           box(50 , 100, 50);
         }else {
           box(100, 200, 200);
