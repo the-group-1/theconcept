@@ -12,14 +12,14 @@
   <body>
     <script>
       function setup() {
-        createCanvas(400, 400, WEBGL);
+        createCanvas(windowHeight, windowHeight, WEBGL);
       }
 
       function draw() {
         background(58, 110, 252);
         //rotateZ(radians(rotationZ));
         rotateX(radians(rotationX));
-        //rotateY(radians(rotationY));
+        rotateY(radians(rotationY));
         box(200, 200, 200);
       }
 
