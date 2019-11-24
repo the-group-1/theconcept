@@ -18,7 +18,7 @@
 let trainupside;
 let trainside;
       function setup() {
-        createCanvas(windowHeight, windowHeight, WEBGL);
+        createCanvas(windowWidth windowHeight, WEBGL);
         trainupside= loadImage('asset/upside.jpg');
         trainside= loadImage('asset/trainside.gif');
       }
@@ -35,11 +35,11 @@ let trainside;
 
 
         if(degY > 65 && degY < 89){
-         image(trainside, 0, 0);
+         image(trainside, 0, 0, windowWidth, windowHeight);
        }else if(degY > -88 && degY < -50){
-        image(trainside, 0, 0);
+        image(trainside, 0, 0, windowWidth, windowHeight);
       }else{
-           image(trainupside, 0, 0);
+           image(trainupside, 0, 0, windowWidth, windowHeight);
         }
 document.getElementById("labelX").innerHTML = degX;
 document.getElementById("labelY").innerHTML = degY;
