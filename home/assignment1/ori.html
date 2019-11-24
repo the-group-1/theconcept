@@ -9,11 +9,13 @@
 
   </head>
   <body>
-    <h1 id="labelX">X = </h1>
-    <h2 id="labelY">Y = </h1>
-    <h3 id="labelZ">Z = </h1>
+    <h1 id="labelX"></h1>
+    <h2 id="labelY"></h1>
+    <h3 id="labelZ"></h1>
     <script>
     var degX;
+    var degY;
+    var degZ;
 
 let trainupside;
 let trainside;
@@ -26,6 +28,7 @@ let trainside;
 
       function draw() {
         background(200, 0, 100);
+        translate(0, 0);
         //rotateZ(radians(rotationZ));
           degX = rotationX;
           degY = rotationY;
@@ -41,9 +44,9 @@ let trainside;
       }else{
            image(trainupside, 0, 0, windowWidth, windowHeight);
         }
-document.getElementById("labelX").innerHTML = degX;
-document.getElementById("labelY").innerHTML = degY;
-document.getElementById("labelZ").innerHTML = degZ;
+document.getElementById("labelX").innerHTML = "X = " + degX;
+document.getElementById("labelY").innerHTML = "Y = "+ degY;
+document.getElementById("labelZ").innerHTML = "Z = " + degZ;
       }
 
 
