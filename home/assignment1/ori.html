@@ -9,7 +9,9 @@
 
   </head>
   <body>
-    <h1 id="rotation"></h1>
+    <h1 id="labelX">X = </h1>
+    <h2 id="labelY">Y = </h1>
+    <h3 id="labelZ">Z = </h1>
     <script>
     var degX;
 
@@ -23,7 +25,10 @@
       function draw() {
         background(200, 100, 100);
         //rotateZ(radians(rotationZ));
-          degX = rotationX;
+          degX = radian(rotationX);
+          degY = radian(rotationX);
+          degZ = radian(rotationX);
+
         rotateX(degX);
         rotateY(radians(rotationY));
 
@@ -33,7 +38,9 @@
         }else {
           box(100, 200, 200);
         }
-document.getElementById("rotation").innerHTML = degX;
+document.getElementById("labelX").innerHTML = degX;
+document.getElementById("labelY").innerHTML = degY;
+document.getElementById("labelZ").innerHTML = degZ;
       }
 
 
