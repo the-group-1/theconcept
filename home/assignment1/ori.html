@@ -25,19 +25,21 @@ let trainside;
 
 
       function draw() {
-        background(200, 100, 100);
+        background(200, 200, 100);
         //rotateZ(radians(rotationZ));
           degX = rotationX;
           degY = rotationY;
           degZ = rotationZ;
 
-      
+
 
 
         if(degY > 65 && degY < 89){
-         image(trainupside, 0, 0);
-        }else {
-           image(trainside, 0, 0);
+         image(trainside, 0, 0);
+       }else if(degY > -88 && degY < -50){
+        image(trainside, 0, 0);
+      }else{
+           image(trainupside, 0, 0);
         }
 document.getElementById("labelX").innerHTML = degX;
 document.getElementById("labelY").innerHTML = degY;
