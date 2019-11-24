@@ -25,16 +25,16 @@
       function draw() {
         background(200, 100, 100);
         //rotateZ(radians(rotationZ));
-          degX = radian(rotationX);
-          degY = radian(rotationX);
-          degZ = radian(rotationX);
+          degX = rotationX;
+          degY = rotationY;
+          degZ = rotationZ;
 
         rotateX(degX);
         rotateY(radians(rotationY));
 
 
         if(degX <= 0){
-          box(50 , 100, 50);
+          box(50 , 255, 50);
         }else {
           box(100, 200, 200);
         }
