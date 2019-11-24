@@ -15,10 +15,12 @@
     <script>
     var degX;
 
-
+let trainupside;
+let trainside;
       function setup() {
         createCanvas(windowHeight, windowHeight, WEBGL);
-
+        trainupside= loadImage('asset/upside.jpg');
+        trainside= loadImage('asset/trainside.gif');
       }
 
 
@@ -33,10 +35,10 @@
         rotateY(radians(rotationY));
 
 
-        if(degX <= 0){
-          box(50 , 255, 50);
+        if(degY > 65 && degY < 89){
+         image(trainupside, 0, 0);
         }else {
-          box(100, 200, 200);
+           image(trainside, 0, 0);
         }
 document.getElementById("labelX").innerHTML = degX;
 document.getElementById("labelY").innerHTML = degY;
