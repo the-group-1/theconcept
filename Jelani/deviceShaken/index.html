@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+    <h1 style="margin-top:150px;">The most amazing people you meet at OCAD</h1>
+    <!-- <a href="assignment1/ori.html">Phone Orientation</a> -->
+		<script>
+			// let value = 0;
+			let trainSound;
+			function preload() {
+				soundFormats('mp3', 'ogg');
+				trainSound = loadSound('./assets/sounds/chugga.mp3');
+			}
+
+			function setup() {
+				createCanvas(windowWidth, windowHeight, WEBGL);
+				trainSound.setVolume(0.1);
+				// trainSound.play();
+			}
+
+			function draw() {
+				fill(value);
+				rect(25, 25, 50, 50);
+			}
+			function deviceShaken() {
+				trainSound.play();
+				value = value + 5;
+				if (value > 255) {
+					value = 0;
+				}
+			}
+		</script>
+  </body>
+</html>
