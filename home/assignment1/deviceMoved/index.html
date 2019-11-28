@@ -11,8 +11,8 @@
   </head>
   <body>
 
-    <h1 style="margin-top:150px;">Device Moved</h1>
-    <!-- <a href="assignment1/ori.html">Phone Orientation</a> -->
+    <h1 style="margin-top:150px;">Device Moved!</h1>
+
 		<script>
 			// let value = 0;
 			let trainSound;
@@ -27,10 +27,15 @@
 				// trainSound.play();
 			}
 
-		
+			function draw() {
+				fill(value);
+				rect(25, 25, 50, 50);
+			}
 			function deviceTurned() {
 				trainSound.play();
-
+				value = value + 5;
+				if (value > 255) {
+					value = 0;
 				}
 			}
 		</script>
