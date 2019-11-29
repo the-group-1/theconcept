@@ -87,6 +87,7 @@ function presenceChange(pInfo)
 
 {
 console.log(pInfo.occupancy);
+console.log(pInfo.UUID);
 totalPopulation = pInfo.occupancy;
 
 }
