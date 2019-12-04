@@ -1,6 +1,11 @@
 html, body {
+	background-image: url("StPatrickPlatform.jpg");
+	background-repeat: no-repeat;
+  	background-position: left; top;
+  	background-attachment: fixed;
   margin: 0;
   padding: 0;
+
 }
 canvas {
   display: block;

@@ -1,0 +1,11 @@
+Public Talk
+
+Public Talk is a page simulating the public. 
+As a remote event sketch I hope to express the possibility for the interaction window for those waiting for the train to animate on their phone.
+The intention would be to make two channel available to participants. A channel for those waiting for the train and those picked up by the train.
+This sketch is of the waiting and initial chat room before particpants get picked up on the other chat room.
+
+//code derived from Atelier I - DIGF2014-002 OCADU[FALL2019]
+//provided by Professor Nick Puckett
+//edited to current augmentation by undergrad 3174195 - Joshua Linton [20191129]
+
